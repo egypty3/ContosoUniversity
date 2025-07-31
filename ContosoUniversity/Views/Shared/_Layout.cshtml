@@ -57,7 +57,8 @@
                 </ul>
             </div>
                 <form id="langForm" asp-controller="Home" asp-action="SetLanguage" method="post" class="ms-3">
-                    <select name="culture" onchange="document.getElementById('langForm').submit();" class="form-select form-select-sm">
+                    <select name="culture" onchange="document.getElementById('langForm').submit();" 
+                            class="form-select form-select-sm">
                         <option value="en" selected="@(isEnglish ? "selected" : null)">
                             @Localizer["English"]
                         </option>
